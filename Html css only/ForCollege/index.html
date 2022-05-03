@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&family=Roboto:wght@100&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/32f2c1337c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="eduford_img/logo.png" alt=""></a>
+            <div class="nav-links" id="mynl">
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showmenu()"></i>
+        </nav>
+        
+        <div class="text-box">
+            <h1>World's Biggest University</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius laudantium quidem tempore quas sit, quae iusto totam, architecto excepturi voluptate a omnis labore ducimus minus sed molestiae, expedita magnam aut?</p>
+            <a href="#" class="box-btn">Visit us</a>
+        </div>
+    </section>
+
+    <section class="course">
+        <h1>Courses We Offer</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum tempora harum quidem non illum molestias. Quidem cum at temporibus iure distinctio assumenda consectetur. In provident necessitatibus blanditiis ea accusantium ipsum!</p>
+            </div>
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum tempora harum quidem non illum molestias. Quidem cum at temporibus iure distinctio assumenda consectetur. In provident necessitatibus blanditiis ea accusantium ipsum!</p>
+            </div>
+            <div class="course-col">
+                <h3>Post Graduation</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum tempora harum quidem non illum molestias. Quidem cum at temporibus iure distinctio assumenda consectetur. In provident necessitatibus blanditiis ea accusantium ipsum!</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="campus">
+        <h1>Global Campus</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, iure?</p>
+
+        <div class="row">
+            <div class="campus-col">
+                <img src="eduford_img/london.png" alt="">
+                <div class="layer">
+                    <h3>London</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="eduford_img/newyork.png" alt="">
+                <div class="layer">
+                    <h3>New York</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="eduford_img/washington.png" alt="">
+                <div class="layer">
+                    <h3>Washington</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script type="text/javascript">
+        let navLinks = document.getElementById('mynl')
+        
+        function showmenu(){
+            console.log('its working')
+            navLinks.style.top = '0';
+        }
+
+        function closemenu(){
+            navLinks.style.top = '-100vh';
+        }
+    </script>
+</body>
+</html>
